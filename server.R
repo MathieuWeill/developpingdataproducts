@@ -11,9 +11,9 @@ shinyServer(function(input, output) {
   output$USPersonalExpenditure <- renderPlot({
     
     # Render a barplot
-    barplot(islands[,input$area]*1000, 
+    barplot(USPersonalExpenditure[,input$area]*1000, 
             main=input$area,
-            ylab="Number of Landmasses",
+            ylab="expenditure",
             xlab="Year")
   })
 })
