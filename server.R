@@ -8,7 +8,7 @@ library(datasets)
 shinyServer(function(input, output) {
   
   # Fill in the spot we created for a plot
-  output$USPersonalExpenditure <- renderPlot({
+  output$USPersonalExpenditureplot <- renderPlot({
     
     # Render a barplot
     barplot(USPersonalExpenditure[,input$area]*1000, 
