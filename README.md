@@ -1,7 +1,7 @@
 # developpingdataproducts
 Repo for my shiny app
 
-Title: Telephones by region
+Title: Areas of the World's Major Landmasses
 Author: Mathieu WEILL   
 AuthorUrl: http://www.rstudio.com/
 Type: Shiny
