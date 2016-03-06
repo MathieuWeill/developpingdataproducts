@@ -1,6 +1,6 @@
 library(shiny)
 
-# Rely on the 'islands' dataset in the datasets
+# Rely on the 'USPersonalExpenditure' dataset in the datasets
 # package (which generally comes preloaded).
 library(datasets)
 
@@ -11,17 +11,17 @@ shinyUI(
   fluidPage(    
     
     # Give the page a title
-    titlePanel("Areas of the World's Major Landmasses"),
+    titlePanel("USPersonalExpenditure"),
     
     # Generate a row with a sidebar
     sidebarLayout(      
       
       # Define the sidebar with one input
       sidebarPanel(
-        selectInput("area", "Area:", 
-                    choices=colnames(islands)),
+        selectInput("type", "type", 
+                    choices=colnames(USPersonalExpenditure)),
         hr(),
-        helpText("Areas of the World's Major Landmasses.")
+        helpText("US Personal Expenditure")
       ),
       
       # Create a spot for the barplot
