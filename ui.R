@@ -1,6 +1,6 @@
 library(shiny)
 
-# Rely on the 'Areas of the World's Major Landmasses' dataset in the datasets
+# Rely on the 'islands' dataset in the datasets
 # package (which generally comes preloaded).
 library(datasets)
 
@@ -19,7 +19,7 @@ shinyUI(
       # Define the sidebar with one input
       sidebarPanel(
         selectInput("region", "Region:", 
-                    choices=colnames(Areas of the World's Major Landmasses)),
+                    choices=colnames(islands)),
         hr(),
         helpText("Areas of the World's Major Landmasses.")
       ),
