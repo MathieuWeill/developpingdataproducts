@@ -13,7 +13,7 @@ shinyServer(function(input, output) {
     # Render a barplot
     barplot(USPersonalExpenditure[,input$area]*1000, 
             main=input$area,
-            ylab="expenditure",
+            ylab="en_US",
             xlab="Year")
   })
 })
