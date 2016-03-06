@@ -1,6 +1,6 @@
 library(shiny)
 
-# Rely on the 'WorldPhones' dataset in the datasets
+# Rely on the 'Areas of the World's Major Landmasses' dataset in the datasets
 # package (which generally comes preloaded).
 library(datasets)
 
@@ -11,9 +11,9 @@ shinyServer(function(input, output) {
   output$phonePlot <- renderPlot({
     
     # Render a barplot
-    barplot(WorldPhones[,input$region]*1000, 
+    barplot(Areas of the World's Major Landmasses[,input$region]*1000, 
             main=input$region,
-            ylab="Number of Telephones",
+            ylab="Number of Landmasses",
             xlab="Year")
   })
 })
