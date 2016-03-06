@@ -26,7 +26,7 @@ shinyUI(
       
       # Create a spot for the barplot
       mainPanel(
-        plotOutput("LandmassesPlot")  
+        plotOutput("USPersonalExpenditureplot")  
       )
       
     )
