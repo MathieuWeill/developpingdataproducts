@@ -1,6 +1,6 @@
 library(shiny)
 
-# Rely on the 'WorldPhones' dataset in the datasets
+# Rely on the 'Areas of the World's Major Landmasses' dataset in the datasets
 # package (which generally comes preloaded).
 library(datasets)
 
