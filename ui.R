@@ -18,7 +18,7 @@ shinyUI(
       
       # Define the sidebar with one input
       sidebarPanel(
-        selectInput("region", "Region:", 
+        selectInput("area", "Area:", 
                     choices=colnames(islands)),
         hr(),
         helpText("Areas of the World's Major Landmasses.")
