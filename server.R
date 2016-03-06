@@ -11,8 +11,8 @@ shinyServer(function(input, output) {
   output$phonePlot <- renderPlot({
     
     # Render a barplot
-    barplot(Areas of the World's Major Landmasses[,input$region]*1000, 
-            main=input$region,
+    barplot(islands[,input$area]*1000, 
+            main=input$area,
             ylab="Number of Landmasses",
             xlab="Year")
   })
